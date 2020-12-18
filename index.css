@@ -120,7 +120,6 @@ textarea {
 .card-body {
   margin-top: 16px;
   padding: 24px;
-  font-smoothing: antialiased;
 }
 .card-body a:hover {
   color: black;
