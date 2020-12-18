@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Gotham";
+  font-style: thin;
+  font-weight: 100;
+  src: url("font/Gotham-Light.otf");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/Gotham-Book.otf");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: bold;
+  font-weight: 600;
+  src: url("font/Gotham-Bold.otf");
+}
+body {
+  font-family: "Gotham";
+  font-style: normal;
+  font-size: 18px;
+  color: black;
+}
+.text-thin {
+  font-weight: 100;
+}
+.text-bold {
+  font-weight: 600;
+}
+.text-dark {
+  color: #0a516d;
+}
+
+#about {
+  background-color: #67cdf5;
+  padding: 15vh 0 15vh 0;
+}
+.logo {
+  max-height: 50vh;
+  max-width: 100%;
+}
+.logo-head {
+  color: #0a516d;
+  font-weight: 100;
+  letter-spacing: 0.08em;
+  margin-bottom: -10px;
+  font-size: 40px;
+}
+.logo-sub {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .logo-head {
+    font-size: 56px;
+  }
+  .logo-sub {
+    font-size: 28px;
+  }
+}
+
+a,
+button {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: none;
+}
+a:hover,
+button:hover {
+  color: rgba(0, 0, 0, 0.671);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+#contact {
+  background-color: #f8a162;
+  padding: 15vh 0 15vh 0;
+  color: white;
+}
+input,
+textarea {
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.726);
+}
+
+.icon {
+  width: 24px;
+  margin-right: 16px;
+}
+.contact-item {
+  margin-bottom: 16px;
+}
+
+.form-sub {
+  font-size: 28px;
+  font-weight: 600;
+}
+#projects {
+  background-color: #f5f5f5;
+  padding: 15vh 0 15vh 0;
+}
+.card-title {
+  font-weight: 600;
+}
+.card-body a {
+  color: black;
+  background-color: #67cdf575;
+  font-size: 24px;
+}
+
+.card-body {
+  margin-top: 16px;
+  padding: 24px;
+  font-smoothing: antialiased;
+}
+.card-body a:hover {
+  color: black;
+  background-color: #67cdf5d2;
+  font-size: 24px;
+}
+.card {
+  border-radius: 4px;
+  margin: 2vw 0;
+  border: none;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+.card-text {
+  margin: 16px 0;
+}
+.space-top {
+  margin-top: 10vh;
+}
+.navbar {
+  background-color: #67cdf5;
+}
+.navbar a {
+  background-color: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+.mouse-over {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.1s ease-in-out;
+}
+.mouse-out {
+  transform: perspective(1px) scale(1);
+  transition: all 0.1s ease-in-out;
+}
+
+#projects a {
+  color: black;
+  font-weight: 600;
+  background-color: #00000018;
+}
+#projects a:hover {
+  color: black;
+  font-weight: 600;
+  background-color: #67cdf591;
+}
+button img {
+  margin-right: 8px;
+}
+.card-shadow {
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.card-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+footer {
+  font-size: 12px;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  padding: 16px;
+}
