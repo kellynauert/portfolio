@@ -15,28 +15,19 @@
   </head>
   <body>
     <nav class="navbar fixed-top">
-      <div class="container d-flex justify-content-start">
-        <a class="nav-link" href="#about">About</a>
+      <div class="container d-flex justify-content-center">
+        <a class="nav-link hide" href="#about">Home</a>
         <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#about-me">About</a>
+
         <a class="nav-link" href="#contact">Contact</a>
       </div>
     </nav>
     <div class="container-fluid" id="about">
       <div class="container">
         <div class="row align-items-center justify-content-center">
-          <div class="col-lg-3 col-md-12">
-            <img src="img/logo.png" alt="logo" class="logo" />
-          </div>
-          <div class="col-lg-7 col-md-12">
-            <p class="text-white logo-head">Kelly Nauert</p>
-            <p class="text-white logo-sub">UX Designer</p>
-            <p class="text-white">
-              I've been working in the education sector for over 7 years as a
-              lead UI/UX designer for digital applications and company
-              processes, with a growing interest and experience in
-              web-development.
-            </p>
-            <a href="KellyNauert_Resume.pdf" download>Download Resume</a>
+          <div class="col d-flex justify-content-center">
+            <img src="img/full_logo.png" alt="logo" class="logo" />
           </div>
         </div>
       </div>
@@ -44,8 +35,8 @@
     <div class="container-fluid" id="projects">
       <div class="container">
         <div class="row">
-          <div class="text-center d-flex row-cols-3">
-            <div class="col"></div>
+          <div class="text-center dev d-flex align-items-baseline">
+            <div class="col hide"></div>
             <div class="col logo-sub">
               <p>Dev Projects</p>
             </div>
@@ -62,14 +53,28 @@
           <div class="col">
             <div
               class="card card-shadow"
+              onclick="window.open('https://kellynauert.github.io/rovercode/','_blank')"
+            >
+              <img src="img/rovercodesite.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-title">Rovercode Website</div>
+                <p class="card-text">
+                  A website for Indianapolis-based CS curriculum creators,
+                  Rovercode.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card card-shadow"
               onclick="window.open('https://kellynauert.github.io/staticLayout/','_blank')"
             >
               <img src="img/static.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <div class="card-title">Static Layout</div>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A recreation of the Hulu website for HTML/CSS practice.
                 </p>
               </div>
             </div>
@@ -83,8 +88,7 @@
               <div class="card-body">
                 <div class="card-title">CSS Creature</div>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A creature made with CSS for CSS practice.
                 </p>
               </div>
             </div>
@@ -98,8 +102,7 @@
               <div class="card-body">
                 <div class="card-title">Pokemon API</div>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A random Pokemon generator created for API practice.
                 </p>
               </div>
             </div>
@@ -116,8 +119,7 @@
               <div class="card-body">
                 <div class="card-title">Element Student Tracking</div>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A student tracking application I designed from the ground up.
                 </p>
               </div>
             </div>
@@ -131,8 +133,7 @@
               <div class="card-body">
                 <div class="card-title">Nexus Online Tutoring</div>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  An online tutoring platform I designed from the ground up.
                 </p>
               </div>
             </div>
@@ -146,8 +147,7 @@
               <div class="card-body">
                 <div class="card-title">Graspable Math Activities</div>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A content creation interface I made for GM.
                 </p>
               </div>
             </div>
@@ -161,8 +161,7 @@
               <div class="card-body">
                 <div class="card-title">Rovercode</div>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  An interface I designed for Rovercode's CS curriculum.
                 </p>
               </div>
             </div>
@@ -176,8 +175,8 @@
               <div class="card-body">
                 <div class="card-title">SOS ED Reporting</div>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  An interface I designed for a student engagement test and
+                  results application.
                 </p>
               </div>
             </div>
@@ -185,10 +184,30 @@
         </div>
       </div>
     </div>
+    <div class="container-fluid" id="about-me">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-4 col-md-6 fallout">
+            <img src="img/fallout.png" alt="" />
+          </div>
+          <div class="col-lg-7 col-md-12 about-me-text">
+            <p class="logo-head">Kelly Nauert</p>
+            <p class="logo-sub">UX Designer</p>
+            <p>
+              I've been working in the education sector for over 7 years as a
+              lead UI/UX designer for digital applications and company
+              processes, with a growing interest and experience in
+              web-development.
+            </p>
+            <a href="KellyNauert_Resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid" id="contact">
       <div class="container">
         <div class="row justify-items-center">
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="w-100 form-sub"><p>Contact me here</p></div>
 
             <div class="d-flex align-items-center contact-item">
@@ -207,7 +226,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-6" id="contact-spacing">
             <form action="https://formspree.io/f/xknpqeyr" method="POST">
               <div class="form-sub">...or here</div>
               <label class="w-100">
@@ -227,6 +246,7 @@
         </div>
       </div>
     </div>
+
     <footer>
       <div class="container">
         <div class="row text-center">

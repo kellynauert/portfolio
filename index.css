@@ -34,7 +34,7 @@ body {
 }
 
 #about {
-  background-color: #67cdf5;
+  background-image: url(img/bg_sharp.png);
   padding: 15vh 0 15vh 0;
 }
 .logo {
@@ -42,7 +42,6 @@ body {
   max-width: 100%;
 }
 .logo-head {
-  color: #0a516d;
   font-weight: 100;
   letter-spacing: 0.08em;
   margin-bottom: -10px;
@@ -54,15 +53,32 @@ body {
   line-height: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .logo-head {
     font-size: 56px;
   }
   .logo-sub {
     font-size: 28px;
   }
+  .about-me-text {
+    text-align: left;
+  }
 }
-
+@media (max-width: 768px) {
+  .about-me-text {
+    text-align: center;
+    margin-top: 5vh;
+  }
+  #contact-spacing {
+    margin-top: 5vh;
+  }
+  .hide {
+    display: none;
+  }
+  .dev .logo-sub {
+    text-align: left;
+  }
+}
 a,
 button {
   color: white;
@@ -80,7 +96,7 @@ button:hover {
 }
 #contact {
   background-color: #f8a162;
-  padding: 15vh 0 15vh 0;
+  padding: 10vh 0 10vh 0;
   color: white;
 }
 input,
@@ -106,7 +122,7 @@ textarea {
 }
 #projects {
   background-color: #f5f5f5;
-  padding: 15vh 0 15vh 0;
+  padding: 10vh 0 10vh 0;
 }
 .card-title {
   font-weight: 600;
@@ -168,7 +184,7 @@ html {
 #projects a:hover {
   color: black;
   font-weight: 600;
-  background-color: #67cdf591;
+  background-color: #00000023;
 }
 button img {
   margin-right: 8px;
@@ -184,4 +200,27 @@ footer {
   background-color: rgb(65, 65, 65);
   color: white;
   padding: 16px;
+}
+.card-img-top {
+  object-position: top;
+}
+#about-me {
+  padding: 10vh 0;
+  background-color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+}
+#about-me a {
+  color: black;
+}
+
+#about-me a:hover {
+  background-color: #fbf598;
+}
+img {
+  max-width: 100%;
+}
+.fallout img {
+  max-width: 90%;
 }

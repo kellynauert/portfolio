@@ -8,3 +8,4 @@ document.querySelectorAll(".card").forEach((item) => {
     item.classList.add("class", "mouse-out");
   });
 });
+console.log(window.location.href);
