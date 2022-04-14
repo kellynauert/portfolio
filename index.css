@@ -1,27 +1,28 @@
 @font-face {
-  font-family: "Gotham";
+  font-family: 'Gotham';
   font-style: thin;
   font-weight: 100;
-  src: url("font/Gotham-Light.otf");
+  src: url('font/Gotham-Light.otf');
 }
 
 @font-face {
-  font-family: "Gotham";
+  font-family: 'Gotham';
   font-style: normal;
   font-weight: 400;
-  src: url("font/Gotham-Book.otf");
+  src: url('font/Gotham-Book.otf');
 }
 @font-face {
-  font-family: "Gotham";
+  font-family: 'Gotham';
   font-style: bold;
   font-weight: 600;
-  src: url("font/Gotham-Bold.otf");
+  src: url('font/Gotham-Bold.otf');
 }
 body {
-  font-family: "Gotham";
+  font-family: 'Gotham';
   font-style: normal;
   font-size: 18px;
   color: black;
+  overflow-x: hidden;
 }
 .text-thin {
   font-weight: 100;
@@ -147,6 +148,10 @@ textarea {
   margin: 2vw 0;
   border: none;
 }
+.card-img {
+  object-fit: fill;
+  height: 600px;
+}
 .card-img-top {
   object-fit: cover;
   height: 200px;
@@ -223,4 +228,24 @@ img {
 }
 .fallout img {
   max-width: 90%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.gallery {
+  background: #eee;
+}
+
+.gallery-cell {
+  /* width: 28%;
+  height: 200px; */
+  margin-right: 10px;
+  counter-increment: gallery-cell;
 }
